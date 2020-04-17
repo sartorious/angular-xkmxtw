@@ -1,0 +1,14 @@
+<h2>Co Results</h2>
+
+<div *ngFor="let coresult of coresults; index as coresultId">
+<h3>
+<a [title]="coresult.CMPNY_NM.fld_val" [routerLink]="['/coresults',coresultId]">
+  {{ coresult.STCK_RFRNC.fld_val }}  
+  </a>
+<p>
+  {{ coresult.CMPNY_NM.fld_desc }} {{coresult.CMPNY_NM.fld_val }}
+  </p>
+<p>
+ 
+</h3>
+</div>
