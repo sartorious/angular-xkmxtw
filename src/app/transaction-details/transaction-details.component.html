@@ -1,8 +1,26 @@
-<h2>Stock Transactions</h2>
+<h2>{{transaction.Desc}} Transactions</h2>
 <div *ngIf="transaction">
   <table border="2">
-    <th>
-      <td>AccName</td><td>	TransTime</td><td>	SettDate</td><td>	TransDate</td><td>	Ticker	</td><td>Sedol</td><td>	ISIN</td><td>	Quantity</td><td>	SharePrice</td><td>	Desc</td><td>	Ref</td><td>	Debit</td><td>	Credit</td><td>	iiTrdAccBal</td><td>	Bal</td><td>	iiIsaAccBal</td><td>	Consideration</td><td>	TransType</td><td>	InvestedAmnt</td><td>	Commission</td><td>	StampDuty</td>
-    
+   
+      <td>AccName</td><td>	TransTime</td>
+  
+      <td>	TransDate</td><td>	Ticker	</td>
+
+      <td>	Quantity</td><td>	SharePrice</td>
+
+      <td>	Consideration</td><td>	TransType</td>
+
+      <td>	Commission</td><td>	StampDuty</td>
+    <tr>
+      <td>{{ transaction.AccName}}</td><td>	{{ transaction.TransTime}}</td>
+ 
+      <td>	{{ transaction.TransDate}}</td><td>	{{ transaction.Ticker	}}</td>
+
+      <td>	{{ transaction.Quantity}}</td><td>	{{ transaction.SharePrice}}</td>
+
+      <td>	{{ transaction.Consideration}}</td><td>	{{ transaction.TransType}}</td>
+
+      <td>	{{ transaction.Commission}}</td><td>	{{ transaction.StampDuty}}</td>
+      </tr>
   </table>
   </div>
