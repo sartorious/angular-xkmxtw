@@ -1,0 +1,20 @@
+<h2>Transactions</h2>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
+
+<div *ngFor="let transaction of transactions; index as transactionId">
+  <h3>
+    <a [title]="transaction.symbol + ' details'" [routerLink]="['/transactions',transactionId]">
+    {{ transaction.symbol }}
+    </a>
+  </h3>
+  <p *ngIf="transaction.desc">
+    Description: {{ transaction.desc }}
+
+   
+</div>

@@ -20,8 +20,10 @@ import { TransactionDetailsComponent } from './transaction-details/transaction-d
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: 'transactions/:transactionId', component: TransactionDetailsComponent},
       { path: 'coresults/:coresultId', component: CoresultDetailsComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
+      {path: '', component: TransactionListComponent},
       { path: '', component: CoresultListComponent },   
       { path: '', component: ProductListComponent },
     ])
