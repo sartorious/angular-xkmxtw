@@ -9,12 +9,12 @@ can be found in the LICENSE file at http://angular.io/license
 
 <div *ngFor="let transaction of transactions; index as transactionId">
   <h3>
-    <a [title]="transaction.symbol + ' details'" [routerLink]="['/transactions',transactionId]">
-    {{ transaction.symbol }}
+    <a [title]="transaction.Ticker + ' details'" [routerLink]="['/transactions',transactionId]">
+    {{ transaction.Ticker }}
     </a>
   </h3>
-  <p *ngIf="transaction.desc">
-    Description: {{ transaction.desc }}
+  <p *ngIf="transaction.Desc">
+    Description: {{ transaction.Desc }}
 
    
 </div>

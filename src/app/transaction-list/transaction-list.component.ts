@@ -9,5 +9,3 @@ import { transactions } from '../transactions';
 export class TransactionListComponent   {
   transactions = transactions;
   }
-
-}
