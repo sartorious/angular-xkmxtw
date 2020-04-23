@@ -12,6 +12,8 @@ import { CoresultListComponent } from './coresult-list/coresult-list.component';
 
 import { removeSummaryDuplicates } from '@angular/compiler';
 import { CoresultDetailsComponent } from './coresult-details/coresult-details.component';
+import { TransactionListComponent } from './transaction-list/transaction-list.component';
+import { TransactionDetailsComponent } from './transaction-details/transaction-details.component';
 
 @NgModule({
   imports: [
@@ -31,7 +33,9 @@ import { CoresultDetailsComponent } from './coresult-details/coresult-details.co
     ProductAlertsComponent,
     CoresultListComponent,
     ProductDetailsComponent,
-    CoresultDetailsComponent
+    CoresultDetailsComponent,
+    TransactionListComponent,
+    TransactionDetailsComponent
   ],
   bootstrap: [ AppComponent ]
 })
